@@ -1,0 +1,61 @@
+
+<div class="row panel-kpi">
+	<div class="panel-heading">Westpac DDA - Inbox</div>
+	<div class="panel-body" id="inbox">
+		<!-- without selected messages -->
+		<input ng-model="search" type="text" class="form-control search"
+			placeholder="Search" ng-hide="selectedMessagesCount > 0" />
+
+
+		<!-- /input-group -->
+		<div class="msg-list">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>
+							<button type="button"
+								class="btn btn-default btn-toogle  btn-selectmsg"
+								ng-click="toggleSelection()">
+								<i glyphicon="ok"
+									ng-show="visibleSelectedMessagesCount > 0 && visibleSelectedMessagesCount === displayedMessages.length"></i>
+								<i glyphicon="minus"
+									ng-show="0 < visibleSelectedMessagesCount && visibleSelectedMessagesCount < displayedMessages.length"></i>
+							</button>
+						</th>
+						<th sort by="order" reverse="reverse" order="'priority'">!</th>
+						<th sort by="order" reverse="reverse" order="'type'">Type</th>
+						<!-- new column related to the wireframe -->
+						<th sort by="order" reverse="reverse" order="'title'">Title</th>
+						<th sort by="order" reverse="reverse" order="'desk'">Desks</th>
+						<!-- new column related to the wireframe -->
+						<th sort by="order" reverse="reverse" order="'sender'">From</th>
+						<th sort by="order" reverse="reverse" order="'time'"><i
+							class="glyphicon glyphicon-time" /></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="message in displayedMessages track by message.id"
+						class="message"
+						ng-class="{'unread':!message.read, 'active':message.id === selectedMessageId}"
+						ng-click="showMessage(message)">
+						<td>
+							<button type="button"
+								class="btn btn-default btn-toogle  btn-selectmsg"
+								ng-click="selectMessage(message); $event.stopPropagation()">
+								<i glyphicon="ok" ng-show="message.isSelected"></i>
+							</button>
+						</td>
+						<td><span
+							class="label level-label label-{{message.levelClass}}"></span></td>
+						<td>{{message.messageType}}</td>
+						<td>{{message.title}}</td>
+						<td>{{message.desk}}</td>
+						<td>{{message.sender}}</td>
+						<td><span relatime="message.time" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,315 @@
+<div class="row panel-kpi">
+	<div class="panel-heading">Westpac DDA - Sydney Format</div>
+	<div class="panel-body">
+		<table border="1" class="dda-wrapper-table">
+			<tr>
+				<td align="center">
+
+					<table border="0" class="dda-form-table">
+						<tr>
+							<td><div class="row westpac-row">
+									<label class="col-md-3">Dealer Details</label>
+								</div></td>
+						</tr>
+						<tr>
+							<td>
+								<table border="0" class="dda-form-table">
+									<tr>
+										<td width="50%"><label class="col-md-3">Salary
+												Numbar</label>
+											<div class="col-md-9">
+												<input ng-model="search" type="text"
+													class="form-control search" placeholder="Salary Numbar"
+													ng-hide="selectedMessagesCount > 0" />
+											</div></td>
+										<td width="50%"><label class="col-md-3">Trader
+												Name</label>
+											<div class="col-md-9">
+												<input ng-model="search" type="text"
+													class="form-control search" placeholder="Trader Name"
+													ng-hide="selectedMessagesCount > 0" />
+											</div></td>
+									</tr>
+
+									<tr>
+										<td><label class="col-md-3">Position & Desk</label>
+											<div class="col-md-9">
+												<input ng-model="search" type="text"
+													class="form-control search" placeholder="Position & Desk"
+													ng-hide="selectedMessagesCount > 0" />
+											</div></td>
+										<td><label class="col-md-3">Location</label>
+											<div class="col-md-9">
+												<input ng-model="search" type="text"
+													class="form-control search" placeholder="Location"
+													ng-hide="selectedMessagesCount > 0" />
+											</div></td>
+									</tr>
+
+									<tr>
+										<td><label class="col-md-3">Submission Date</label>
+											<div ng-controller="ExpirationDateCtrl">
+												<div class="col-md-4 input-group">													
+													<input type="text" class="form-control westpac-calendar"
+														ng-click="open($event)" 
+														datepicker-popup="{{format}}" ng-model="dt"
+														is-open="opened" min-date="minDate"
+														datepicker-options="dateOptions" ng-required="true"
+														close-text="Close" />
+												</div>
+											</div></td>
+										<td><label class="col-md-3">Business Support Unit</label>
+											<div class="col-md-9">
+												<input ng-model="search" type="text"
+													class="form-control search"
+													placeholder="Business Support Unit"
+													ng-hide="selectedMessagesCount > 0" />
+											</div></td>
+
+									</tr>
+
+								</table>
+							</td>
+						</tr>
+
+						<tr>
+							<td><div class="row westpac-row">
+									<label class="col-md-3">Dealer Profile</label>
+								</div></td>
+						</tr>
+						<tr>
+							<td>Ticked boxes indicate authority to deal in the
+								respective product areas subject to specific product and market
+								risk limit approval.</td>
+						</tr>
+						<tr>
+							<td align="center">
+								<table border="0" width="100%">
+									<tr>
+										<td>Interest Rate</td>
+										<td>Commodities</td>
+										<td>Foreign Exchange</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<table border="0" width="95%">
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Deposite / Loans</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Physical Securities</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input"> CPI
+														Bonds</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input"> ...</td>
+												</tr>
+											</table>
+										</td>
+
+										<td align="center">
+											<table border="0" width="95%">
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 1</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 2</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 4</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 5</td>
+												</tr>
+											</table>
+										</td>
+
+										<td align="center">
+											<table border="0" width="95%">
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 1</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 2</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 4</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 5</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+
+									<tr>
+										<td>Carbon</td>
+										<td>Energy</td>
+										<td>Equities</td>
+									</tr>
+
+									<tr>
+										<td align="center">
+											<table border="0" width="95%">
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Deposite / Loans</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Physical Securities</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input"> CPI
+														Bonds</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input"> ...</td>
+												</tr>
+											</table>
+										</td>
+
+										<td align="center">
+											<table border="0" width="95%">
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 1</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 2</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 4</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 5</td>
+												</tr>
+											</table>
+										</td>
+
+										<td align="center">
+											<table border="0" width="95%">
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 1</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 2</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 4</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Product Name 5</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>Credit</td>
+
+									</tr>
+									<tr>
+										<td align="center">
+											<table border="0" width="95%">
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Deposite / Loans</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input">
+														Physical Securities</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input"> CPI
+														Bonds</td>
+												</tr>
+												<tr>
+													<td><input id="checkSlave" type="checkbox"
+														ng-checked="master" aria-label="Slave input"> ...</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td><hr></td>
+						</tr>
+						<tr>
+							<td>
+								<div ng-include="'resources/partials/dda-form-approvals.html'"></div>
+							</td>
+						</tr>
+						<tr>
+							<td><hr></td>
+						</tr>
+
+						<tr>
+							<td>
+								<div ng-include="'resources/partials/dda-form-conditions.html'"></div>
+
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td align="center"><input type="button"
+								class="btn btn-primary" value="Create DDA"></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>

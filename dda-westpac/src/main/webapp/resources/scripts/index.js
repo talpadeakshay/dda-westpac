@@ -1,0 +1,1 @@
+var mainModule = angular.module("srr.app", ["ui.select","dda.datePicker","dda.test-workflow"]);

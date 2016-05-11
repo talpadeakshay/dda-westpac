@@ -1,0 +1,56 @@
+<table border="0" class="dda-form-table">
+
+	
+	<tr>
+		<td><label class="col-md-3">Comments</label></td>
+		<td colspan="2"><textarea ng-model="string"
+				class="form-control search">								
+								</textarea></td>
+	</tr>
+
+	<tr>
+		<td colspan="3"><div class="row westpac-row">
+				<label class="col-md-3">Approvals</label>
+			</div></td>
+	</tr>
+	<tr>
+		<td colspan="3">Please choose different people who can approve
+			this request</td>
+	</tr>
+	<tr>
+		<td width="30%"><label class="col-md-3">Manager 1</label>
+			<div class="col-md-9">
+				<input ng-model="search" type="text" class="form-control search"
+					placeholder="Manager 1" ng-hide="selectedMessagesCount > 0" />
+			</div></td>
+		<td width="30%"><label class="col-md-3">Manager 2</label>
+			<div class="col-md-9">
+				<input ng-model="search" type="text" class="form-control search"
+					placeholder="Manager 2" ng-hide="selectedMessagesCount > 0" />
+			</div></td>
+
+		<td width="30%"><label class="col-md-3">Manager 3</label>
+			<div class="col-md-9">
+				<input ng-model="search" type="text" class="form-control search"
+					placeholder="Manager 3" ng-hide="selectedMessagesCount > 0" />
+			</div></td>
+	</tr>
+
+	<tr>
+		<td width="30%"><label class="col-md-3">Approval By user</label>
+			<div class="col-md-9">
+				<input ng-model="search" type="text" class="form-control search"
+					placeholder="Approval By user" ng-hide="selectedMessagesCount > 0" />
+			</div></td>
+
+		<td width="30%"><label class="col-md-11">Business Unit:
+				CAPITAL MARKETS (TRADER)</label></td>
+
+		<td><label class="col-md-3">Creation Date</label>
+			<div class="col-md-9">
+				<input ng-model="search" type="text" class="form-control search"
+					placeholder="Creation Date" ng-hide="selectedMessagesCount > 0" />
+			</div></td>
+	</tr>
+
+</table>

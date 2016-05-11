@@ -1,0 +1,148 @@
+/* app css stylesheet */
+html, body {
+  height: 100%;
+}
+
+.logo {
+  margin-top: -5px;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.westpac-screen {
+  margin: 20px;
+}
+.westpac-header {
+
+}
+.westpac-row {
+  margin: 5px;
+}
+.westpac-body {
+  margin: 20px 0;
+  height: 50%;
+}
+.westpac-calendar {
+  margin-left: 15px;
+}
+
+.westpac-table {
+  margin: 0 0 1% 1%;
+  display: inline-block;
+  float: none !important;
+  vertical-align: middle;
+  height: 50vh;
+  width: 98%;
+}
+.ag-fresh .ag-body {
+  background: white;
+}
+.icon-error {
+  color: red;
+  vertical-align: middle;
+}
+.btn-selectmsg {
+  font-size: 10px;
+  height: 15px;
+  padding: 1px;
+  width: 15px;
+}
+.btn-search {
+  margin-top: 14px;
+  padding: 7px 12px 6px 12px;
+}
+
+.critical-red-row {
+	font-weight: bold;
+	color: red; 
+}
+
+.nochange-light {
+	color: lightgray;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.required-label:after {
+  content:"*";
+  color:red;
+}
+
+.xscroll-table {
+	overflow-x: scroll;  
+	 margin-left:10em; 
+	 margin-bottom: 25px;
+}
+.headcol {
+	position: absolute;
+	left:30px;
+	width: 10em; 
+	white-space: nowrap;
+}
+.mergedcol {
+	text-align: center;
+}
+.no-bottom-margin {
+	margin-bottom: 0px;
+}
+.ten-sized-cell {
+	width: 10em; 
+}
+.dda-form-table {    
+  float: none !important;
+  vertical-align: middle;  
+  height: 15vh;
+  width: 98%;   
+}
+
+.dda-form1-table {    
+  float: none !important;
+  vertical-align: middle;  
+  height: 60vh;
+  width: 98%; 
+}
+
+
+.dda-conditions-table {    
+  float: none !important;
+  vertical-align: middle;  
+  height: 30vh;
+  width: 98%; 
+}
+
+.dda-wrapper-table {    
+  float: none !important;
+  vertical-align: middle;  
+  height: 15vh;
+  width: 100%;
+}
+
+
+ 

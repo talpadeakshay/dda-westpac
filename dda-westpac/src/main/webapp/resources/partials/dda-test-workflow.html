@@ -1,0 +1,12 @@
+
+<div class="row panel-kpi">
+	<div class="panel-heading">Westpac DDA - Inbox</div>
+	<div class="panel-body" id="inbox">		
+
+		<select ng-model="data.selectedRole" class="form-control search">
+			<option ng-repeat="role in data.roleOptions" value="{{role.id}}">{{role.name}}</option>
+		</select>
+		<br>
+		<p align="center"><button ng-click="startWorkflow()" class="btn btn-primary">Start Workflow</button> &nbsp;&nbsp;&nbsp;<button ng-click="loadMessages()" class="btn btn-primary">Load Messages</button></p>
+	</div>
+</div>
